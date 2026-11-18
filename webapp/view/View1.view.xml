@@ -1,0 +1,40 @@
+<mvc:View controllerName="componentconfigurationpractice.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <content>
+
+            <VBox class="sapUiMediumMargin">
+
+                <Title
+                    text="Employee Information"
+                    level="H2" />
+
+                <Label text="Employee ID" />
+                <Text text="{employee>/employee/id}" />
+
+                <Label text="Employee Name" />
+                <Text text="{employee>/employee/name}" />
+
+                <Label text="Department" />
+                <Text text="{employee>/employee/department}" />
+
+                <Label text="Designation" />
+                <Text text="{employee>/employee/designation}" />
+
+                <Label text="Email" />
+                <Text text="{employee>/employee/email}" />
+
+                <Label text="Location" />
+                <Text text="{employee>/employee/location}" />
+
+                <Button
+                    text="Show Employee Details"
+                    press=".onShowDetails"
+                    class="sapUiSmallMarginTop" />
+
+            </VBox>
+
+        </content>
+    </Page>
+</mvc:View>
